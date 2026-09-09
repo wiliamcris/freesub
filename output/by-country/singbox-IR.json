@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA 01 - Wcliam",
-        "🇿🇦 ZA 02 - Wcliam",
-        "🇿🇦 ZA 03 - Wcliam",
-        "🇿🇦 ZA 04 - Wcliam"
+        "🇮🇷 IR 01 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA 01 - Wcliam",
-        "🇿🇦 ZA 02 - Wcliam",
-        "🇿🇦 ZA 03 - Wcliam",
-        "🇿🇦 ZA 04 - Wcliam"
+        "🇮🇷 IR 01 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
