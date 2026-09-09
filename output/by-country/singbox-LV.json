@@ -6,22 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - xiaohe",
-        "🇱🇻 LV 02 - xiaohe",
-        "🇱🇻 LV 03 - xiaohe",
-        "🇱🇻 LV 04 - xiaohe",
-        "🇱🇻 LV 05 - xiaohe"
+        "🇱🇻 LV 01 - Wcliam",
+        "🇱🇻 LV 02 - Wcliam",
+        "🇱🇻 LV 03 - Wcliam",
+        "🇱🇻 LV 04 - Wcliam",
+        "🇱🇻 LV 05 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - xiaohe",
-        "🇱🇻 LV 02 - xiaohe",
-        "🇱🇻 LV 03 - xiaohe",
-        "🇱🇻 LV 04 - xiaohe",
-        "🇱🇻 LV 05 - xiaohe"
+        "🇱🇻 LV 01 - Wcliam",
+        "🇱🇻 LV 02 - Wcliam",
+        "🇱🇻 LV 03 - Wcliam",
+        "🇱🇻 LV 04 - Wcliam",
+        "🇱🇻 LV 05 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },

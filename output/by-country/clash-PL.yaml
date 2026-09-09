@@ -4,7 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaohe
+- name: 🇵🇱 PL 01 - Wcliam
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: 178.95.170.83
+- name: 🇵🇱 PL 02 - Wcliam
   type: vless
   server: 94.183.209.58
   port: 443
@@ -17,7 +30,7 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 02 - xiaohe
+- name: 🇵🇱 PL 03 - Wcliam
   type: vless
   server: 94.183.209.59
   port: 443
@@ -30,39 +43,60 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 03 - xiaohe
+- name: 🇵🇱 PL 04 - Wcliam
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 PL 04 - xiaohe
+- name: 🇵🇱 PL 05 - Wcliam
+  type: ss
+  server: 64.176.73.160
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: VJtsgllDDJfNmaTe
+  udp: true
+- name: 🇵🇱 PL 06 - Wcliam
   type: vless
-  server: 94.183.209.43
-  port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  server: 178.95.170.98
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /4bc027a44532
     headers:
-      Host: 94.183.209.43
-- name: 🇵🇱 PL 05 - xiaohe
+      Host: 178.95.170.98
+- name: 🇵🇱 PL 07 - Wcliam
   type: vless
-  server: 2.26.224.233
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 06 - xiaohe
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: 178.95.170.83
+- name: 🇵🇱 PL 08 - Wcliam
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: 178.95.170.83
+- name: 🇵🇱 PL 09 - Wcliam
   type: vless
   server: 94.183.209.58
   port: 443
@@ -75,27 +109,62 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 10 - Wcliam
+  type: vless
+  server: 94.183.209.43
+  port: 443
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.43
+- name: 🇵🇱 PL 11 - Wcliam
+  type: vless
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
+  - 🇵🇱 PL 01 - Wcliam
+  - 🇵🇱 PL 02 - Wcliam
+  - 🇵🇱 PL 03 - Wcliam
+  - 🇵🇱 PL 04 - Wcliam
+  - 🇵🇱 PL 05 - Wcliam
+  - 🇵🇱 PL 06 - Wcliam
+  - 🇵🇱 PL 07 - Wcliam
+  - 🇵🇱 PL 08 - Wcliam
+  - 🇵🇱 PL 09 - Wcliam
+  - 🇵🇱 PL 10 - Wcliam
+  - 🇵🇱 PL 11 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
+  - 🇵🇱 PL 01 - Wcliam
+  - 🇵🇱 PL 02 - Wcliam
+  - 🇵🇱 PL 03 - Wcliam
+  - 🇵🇱 PL 04 - Wcliam
+  - 🇵🇱 PL 05 - Wcliam
+  - 🇵🇱 PL 06 - Wcliam
+  - 🇵🇱 PL 07 - Wcliam
+  - 🇵🇱 PL 08 - Wcliam
+  - 🇵🇱 PL 09 - Wcliam
+  - 🇵🇱 PL 10 - Wcliam
+  - 🇵🇱 PL 11 - Wcliam
 rules:
 - MATCH,PROXIES

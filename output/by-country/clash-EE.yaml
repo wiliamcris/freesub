@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - xiaohe
+- name: 🇪🇪 EE 01 - Wcliam
   type: vless
   server: 94.183.170.135
   port: 443
@@ -17,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 02 - xiaohe
+- name: 🇪🇪 EE 02 - Wcliam
   type: vless
   server: 94.183.170.135
   port: 443
@@ -30,7 +30,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - xiaohe
+- name: 🇪🇪 EE 03 - Wcliam
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -44,16 +44,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
+  - 🇪🇪 EE 01 - Wcliam
+  - 🇪🇪 EE 02 - Wcliam
+  - 🇪🇪 EE 03 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
+  - 🇪🇪 EE 01 - Wcliam
+  - 🇪🇪 EE 02 - Wcliam
+  - 🇪🇪 EE 03 - Wcliam
 rules:
 - MATCH,PROXIES

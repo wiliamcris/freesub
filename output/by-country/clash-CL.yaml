@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - xiaohe
+- name: 🇨🇱 CL 01 - Wcliam
   type: ss
   server: 64.176.2.21
   port: 8388
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - xiaohe
+  - 🇨🇱 CL 01 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - xiaohe
+  - 🇨🇱 CL 01 - Wcliam
 rules:
 - MATCH,PROXIES

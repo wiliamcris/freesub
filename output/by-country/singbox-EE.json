@@ -6,18 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - xiaohe",
-        "🇪🇪 EE 02 - xiaohe",
-        "🇪🇪 EE 03 - xiaohe"
+        "🇪🇪 EE 01 - Wcliam",
+        "🇪🇪 EE 02 - Wcliam",
+        "🇪🇪 EE 03 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - xiaohe",
-        "🇪🇪 EE 02 - xiaohe",
-        "🇪🇪 EE 03 - xiaohe"
+        "🇪🇪 EE 01 - Wcliam",
+        "🇪🇪 EE 02 - Wcliam",
+        "🇪🇪 EE 03 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },

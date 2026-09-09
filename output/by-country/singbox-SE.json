@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - xiaohe",
-        "🇸🇪 SE 02 - xiaohe"
+        "🇸🇪 SE 01 - Wcliam",
+        "🇸🇪 SE 02 - Wcliam",
+        "🇸🇪 SE 03 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - xiaohe",
-        "🇸🇪 SE 02 - xiaohe"
+        "🇸🇪 SE 01 - Wcliam",
+        "🇸🇪 SE 02 - Wcliam",
+        "🇸🇪 SE 03 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
