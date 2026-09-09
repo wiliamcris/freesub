@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - Wcliam
   type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 02 - Wcliam
+  type: vless
   server: 178.236.16.98
   port: 35728
   uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
@@ -16,7 +28,7 @@ proxies:
     public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - Wcliam
+- name: 🇰🇿 KZ 03 - Wcliam
   type: vless
   server: 77.73.232.61
   port: 19747
@@ -26,18 +38,6 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 03 - Wcliam
-  type: vless
-  server: 83.222.23.81
-  port: 38065
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 04 - Wcliam
@@ -52,6 +52,18 @@ proxies:
     public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 05 - Wcliam
+  type: vless
+  server: 111.88.143.139
+  port: 51940
+  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +73,7 @@ proxy-groups:
   - 🇰🇿 KZ 02 - Wcliam
   - 🇰🇿 KZ 03 - Wcliam
   - 🇰🇿 KZ 04 - Wcliam
+  - 🇰🇿 KZ 05 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +83,6 @@ proxy-groups:
   - 🇰🇿 KZ 02 - Wcliam
   - 🇰🇿 KZ 03 - Wcliam
   - 🇰🇿 KZ 04 - Wcliam
+  - 🇰🇿 KZ 05 - Wcliam
 rules:
 - MATCH,PROXIES
