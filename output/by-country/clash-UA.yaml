@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 MX 01 - Wcliam
+- name: 🇺🇦 UA 01 - Wcliam
   type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  server: 104.24.31.89
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ul-mexico1.09vpn.com
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 MX 01 - Wcliam
+  - 🇺🇦 UA 01 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 MX 01 - Wcliam
+  - 🇺🇦 UA 01 - Wcliam
 rules:
 - MATCH,PROXIES

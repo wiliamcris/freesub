@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - Wcliam
   type: vless
-  server: 77.73.232.61
-  port: 19747
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - Wcliam
-  type: vless
   server: 111.88.143.139
   port: 51940
   uuid: 03464802-b517-404b-b15c-7750ffc5e78f
@@ -28,31 +16,7 @@ proxies:
     public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 03 - Wcliam
-  type: vless
-  server: 77.73.232.61
-  port: 19747
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 04 - Wcliam
-  type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 05 - Wcliam
+- name: 🇰🇿 KZ 02 - Wcliam
   type: vless
   server: 83.222.23.81
   port: 38065
@@ -64,7 +28,7 @@ proxies:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 06 - Wcliam
+- name: 🇰🇿 KZ 03 - Wcliam
   type: vless
   server: 77.73.232.61
   port: 19747
@@ -84,9 +48,6 @@ proxy-groups:
   - 🇰🇿 KZ 01 - Wcliam
   - 🇰🇿 KZ 02 - Wcliam
   - 🇰🇿 KZ 03 - Wcliam
-  - 🇰🇿 KZ 04 - Wcliam
-  - 🇰🇿 KZ 05 - Wcliam
-  - 🇰🇿 KZ 06 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,8 +56,5 @@ proxy-groups:
   - 🇰🇿 KZ 01 - Wcliam
   - 🇰🇿 KZ 02 - Wcliam
   - 🇰🇿 KZ 03 - Wcliam
-  - 🇰🇿 KZ 04 - Wcliam
-  - 🇰🇿 KZ 05 - Wcliam
-  - 🇰🇿 KZ 06 - Wcliam
 rules:
 - MATCH,PROXIES
