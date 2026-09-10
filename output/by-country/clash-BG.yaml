@@ -16,6 +16,37 @@ proxies:
 - name: 🇧🇬 BG 02 - Wcliam
   type: vless
   server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 03 - Wcliam
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
+- name: 🇧🇬 BG 04 - Wcliam
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 192.145.31.5
+- name: 🇧🇬 BG 05 - Wcliam
+  type: vless
+  server: 192.145.31.5
   port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -26,33 +57,6 @@ proxies:
     path: /
     headers:
       Host: 192.145.31.5
-- name: 🇧🇬 BG 03 - Wcliam
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - Wcliam
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 05 - Wcliam
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 06 - Wcliam
   type: vless
   server: 192.145.31.5
@@ -74,8 +78,21 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: neth9.lunariai.ru
+      Host: 192.145.31.5
 - name: 🇧🇬 BG 08 - Wcliam
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 BG 09 - Wcliam
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -83,7 +100,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 192.145.31.5
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +114,7 @@ proxy-groups:
   - 🇧🇬 BG 06 - Wcliam
   - 🇧🇬 BG 07 - Wcliam
   - 🇧🇬 BG 08 - Wcliam
+  - 🇧🇬 BG 09 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +128,6 @@ proxy-groups:
   - 🇧🇬 BG 06 - Wcliam
   - 🇧🇬 BG 07 - Wcliam
   - 🇧🇬 BG 08 - Wcliam
+  - 🇧🇬 BG 09 - Wcliam
 rules:
 - MATCH,PROXIES
