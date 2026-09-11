@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 02 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 03 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 04 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 05 - Wcliam"
+        "🇷🇺 俄罗斯 (Russia) 01 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 02 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 03 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 04 - Wcliam",
-        "🇷🇺 俄罗斯 (Russia) 05 - Wcliam"
+        "🇷🇺 俄罗斯 (Russia) 01 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
