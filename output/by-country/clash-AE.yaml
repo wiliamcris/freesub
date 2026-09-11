@@ -18,17 +18,63 @@ proxies:
     path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: web-socket.tgdaosheng.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Wcliam
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - Wcliam
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 03 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 04 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 03 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 04 - Wcliam
 rules:
 - MATCH,PROXIES
