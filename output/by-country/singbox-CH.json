@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - Wcliam",
-        "🇮🇪 IE 02 - Wcliam",
-        "🇮🇪 IE 03 - Wcliam"
+        "🇨🇭 CH 01 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - Wcliam",
-        "🇮🇪 IE 02 - Wcliam",
-        "🇮🇪 IE 03 - Wcliam"
+        "🇨🇭 CH 01 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
