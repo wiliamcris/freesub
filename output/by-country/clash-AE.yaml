@@ -6,22 +6,21 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.58.181.88
+  port: 8443
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
+  uuid: ab3a17ae-4d4f-45ff-a05f-4d27b7f97838
   udp: true
   tls: true
   skip-cert-verify: true
@@ -33,7 +32,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
   udp: true
   tls: true
   skip-cert-verify: true
@@ -41,32 +40,6 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,8 +48,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 02 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 03 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 04 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 05 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,7 +56,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 02 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 03 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 04 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 05 - Wcliam
 rules:
 - MATCH,PROXIES
