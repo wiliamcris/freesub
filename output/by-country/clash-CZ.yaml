@@ -6,8 +6,48 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Wcliam
   type: vless
-  server: 172.64.154.8
-  port: 2086
+  server: 188.114.96.7
+  port: 8443
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
+- name: 🇨🇿 CZ 02 - Wcliam
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+- name: 🇨🇿 CZ 03 - Wcliam
+  type: vless
+  server: 108.162.198.178
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 04 - Wcliam
+  type: vless
+  server: 104.18.47.113
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -23,11 +63,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - Wcliam
+  - 🇨🇿 CZ 02 - Wcliam
+  - 🇨🇿 CZ 03 - Wcliam
+  - 🇨🇿 CZ 04 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - Wcliam
+  - 🇨🇿 CZ 02 - Wcliam
+  - 🇨🇿 CZ 03 - Wcliam
+  - 🇨🇿 CZ 04 - Wcliam
 rules:
 - MATCH,PROXIES

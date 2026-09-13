@@ -6,40 +6,45 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: ab3a17ae-4d4f-45ff-a05f-4d27b7f97838
+  server: 80.240.18.227
+  port: 10051
+  uuid: 73996ef7-544c-45e7-abc0-973218c727e2
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - Wcliam
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
+  server: 193.29.225.249
+  port: 4443
+  uuid: d0dd16f2-81b4-4892-933e-040856457242
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
