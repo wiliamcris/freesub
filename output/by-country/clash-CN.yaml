@@ -5,19 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - Wcliam
-  type: vless
-  server: 101.96.234.244
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  type: vmess
+  server: 124.151.45.60
+  port: 38320
+  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: kkkk-8oc.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-8oc.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
