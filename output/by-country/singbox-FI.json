@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - Wcliam"
+        "🇫🇮 FI 01 - Wcliam",
+        "🇫🇮 FI 02 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - Wcliam"
+        "🇫🇮 FI 01 - Wcliam",
+        "🇫🇮 FI 02 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
