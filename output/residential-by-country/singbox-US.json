@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - Wcliam",
-        "🇨🇭 CH 02 - Wcliam",
-        "🇨🇭 CH 03 - Wcliam"
+        "🇺🇸 美国 (United States) 01 (家宽) - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - Wcliam",
-        "🇨🇭 CH 02 - Wcliam",
-        "🇨🇭 CH 03 - Wcliam"
+        "🇺🇸 美国 (United States) 01 (家宽) - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
