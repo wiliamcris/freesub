@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
 - name: 🇹🇭 TH 03 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: edge
 - name: 🇹🇭 TH 04 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -51,7 +51,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 05 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -75,7 +75,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: random
 - name: 🇹🇭 TH 07 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -87,7 +87,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 08 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -99,7 +99,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇹🇭 TH 09 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -111,7 +111,22 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: ios
+- name: 🇹🇭 TH 10 - Wcliam
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,6 +141,7 @@ proxy-groups:
   - 🇹🇭 TH 07 - Wcliam
   - 🇹🇭 TH 08 - Wcliam
   - 🇹🇭 TH 09 - Wcliam
+  - 🇹🇭 TH 10 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,5 +156,6 @@ proxy-groups:
   - 🇹🇭 TH 07 - Wcliam
   - 🇹🇭 TH 08 - Wcliam
   - 🇹🇭 TH 09 - Wcliam
+  - 🇹🇭 TH 10 - Wcliam
 rules:
 - MATCH,PROXIES
