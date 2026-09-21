@@ -20,21 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - Wcliam
   type: vless
-  server: 91.209.253.119
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 03 - Wcliam
-  type: vless
-  server: 91.209.253.109
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -44,6 +30,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 03 - Wcliam
+  type: vless
+  server: 91.209.253.42
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 04 - Wcliam
@@ -57,12 +57,54 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 05 - Wcliam
   type: vless
-  server: 91.209.253.244
+  server: 91.209.253.216
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 06 - Wcliam
+  type: vless
+  server: 91.209.253.250
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 07 - Wcliam
+  type: vless
+  server: 91.209.253.68
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 08 - Wcliam
+  type: vless
+  server: 91.209.253.243
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -84,6 +126,9 @@ proxy-groups:
   - 🇸🇦 SA 03 - Wcliam
   - 🇸🇦 SA 04 - Wcliam
   - 🇸🇦 SA 05 - Wcliam
+  - 🇸🇦 SA 06 - Wcliam
+  - 🇸🇦 SA 07 - Wcliam
+  - 🇸🇦 SA 08 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +139,8 @@ proxy-groups:
   - 🇸🇦 SA 03 - Wcliam
   - 🇸🇦 SA 04 - Wcliam
   - 🇸🇦 SA 05 - Wcliam
+  - 🇸🇦 SA 06 - Wcliam
+  - 🇸🇦 SA 07 - Wcliam
+  - 🇸🇦 SA 08 - Wcliam
 rules:
 - MATCH,PROXIES
