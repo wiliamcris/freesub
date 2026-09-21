@@ -6,61 +6,19 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - Wcliam
   type: vless
-  server: 195.85.23.47
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  server: 172.67.130.187
+  port: 2083
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: fans.liverpool.qzz.io
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: fans.liverpool.qzz.io
 - name: 🇨🇿 CZ 02 - Wcliam
-  type: vless
-  server: cz1.zuoai.cf
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - Wcliam
-  type: vless
-  server: 195.85.23.29
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - Wcliam
-  type: vless
-  server: 195.85.23.29
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - Wcliam
   type: vless
   server: 195.85.23.45
   port: 443
@@ -74,7 +32,35 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - Wcliam
+- name: 🇨🇿 CZ 03 - Wcliam
+  type: vless
+  server: 164.92.147.213
+  port: 2087
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /city/my
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 CZ 04 - Wcliam
+  type: vless
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 05 - Wcliam
   type: vless
   server: 195.85.23.88
   port: 443
@@ -88,9 +74,23 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 06 - Wcliam
+  type: vless
+  server: cz1.zuoai.cf
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 07 - Wcliam
   type: vless
-  server: 195.85.23.75
+  server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -118,7 +118,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 09 - Wcliam
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -132,21 +132,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 10 - Wcliam
   type: vless
-  server: 195.85.23.217
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 11 - Wcliam
-  type: vless
-  server: 195.85.23.88
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -173,7 +159,6 @@ proxy-groups:
   - 🇨🇿 CZ 08 - Wcliam
   - 🇨🇿 CZ 09 - Wcliam
   - 🇨🇿 CZ 10 - Wcliam
-  - 🇨🇿 CZ 11 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -189,6 +174,5 @@ proxy-groups:
   - 🇨🇿 CZ 08 - Wcliam
   - 🇨🇿 CZ 09 - Wcliam
   - 🇨🇿 CZ 10 - Wcliam
-  - 🇨🇿 CZ 11 - Wcliam
 rules:
 - MATCH,PROXIES
