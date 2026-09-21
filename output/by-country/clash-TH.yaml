@@ -6,42 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Wcliam
   type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇭 TH 02 - Wcliam
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 03 - Wcliam
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇭 TH 04 - Wcliam
-  type: vless
   server: 43.133.110.81
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -54,6 +18,42 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇹🇭 TH 02 - Wcliam
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇹🇭 TH 03 - Wcliam
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇹🇭 TH 04 - Wcliam
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 05 - Wcliam
   type: vless
   server: 34.15.162.1
@@ -89,7 +89,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: safari
 - name: 🇹🇭 TH 08 - Wcliam
   type: vless
   server: 103.86.49.57
@@ -114,7 +114,22 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: edge
+- name: 🇹🇭 TH 10 - Wcliam
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +144,7 @@ proxy-groups:
   - 🇹🇭 TH 07 - Wcliam
   - 🇹🇭 TH 08 - Wcliam
   - 🇹🇭 TH 09 - Wcliam
+  - 🇹🇭 TH 10 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -143,5 +159,6 @@ proxy-groups:
   - 🇹🇭 TH 07 - Wcliam
   - 🇹🇭 TH 08 - Wcliam
   - 🇹🇭 TH 09 - Wcliam
+  - 🇹🇭 TH 10 - Wcliam
 rules:
 - MATCH,PROXIES
