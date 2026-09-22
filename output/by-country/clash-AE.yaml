@@ -6,6 +6,31 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: e45762cb-9cd1-4e69-8638-9126456b79bd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - Wcliam
+  type: vless
   server: 89.125.147.199
   port: 443
   uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
@@ -16,17 +41,108 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 04 - Wcliam
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - Wcliam
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - Wcliam
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - Wcliam
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: e16ab346-73be-4fc6-8b6f-511c455b8504
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - Wcliam
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 32088840-4c1e-44af-958f-b7b552aeb919
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 09 - Wcliam
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 7c97de67-9586-4aa5-8adf-ff3ce469149e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 03 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 04 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 05 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 06 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 07 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 08 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 09 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 03 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 04 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 05 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 06 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 07 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 08 - Wcliam
+  - 🇦🇪 阿联酋 (UAE) 09 - Wcliam
 rules:
 - MATCH,PROXIES
