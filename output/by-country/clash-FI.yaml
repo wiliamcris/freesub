@@ -6,20 +6,21 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Wcliam
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 224e5498-7e60-4fdd-81fc-b499684ddfc4
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    path: /
     headers:
-      Host: rb24.ir
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 02 - Wcliam
   type: vless
-  server: 212.104.128.45
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -33,19 +34,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - Wcliam
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 04 - Wcliam
   type: vless
-  server: 212.104.128.244
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -59,7 +62,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 05 - Wcliam
   type: vless
-  server: 212.104.128.206
+  server: 212.104.128.152
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -73,35 +76,33 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 06 - Wcliam
   type: vless
-  server: 212.104.128.106
+  server: k2.cloud--vpn.site
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 07 - Wcliam
   type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 FI 08 - Wcliam
   type: vless
-  server: 212.104.128.152
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -115,7 +116,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 09 - Wcliam
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -129,96 +130,19 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 10 - Wcliam
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  server: 31.76.80.230
+  port: 8443
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: fin.luxes.network
   network: ws
   ws-opts:
-    path: /
+    path: /assets
     headers:
-      Host: c12.com
+      Host: 31.76.80.230
 - name: 🇫🇮 FI 11 - Wcliam
-  type: vless
-  server: 212.104.128.27
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 12 - Wcliam
-  type: vless
-  server: 212.104.128.152
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 13 - Wcliam
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 14 - Wcliam
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 15 - Wcliam
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 16 - Wcliam
-  type: ss
-  server: 87.58.148.70
-  port: 443
-  cipher: aes-256-gcm
-  password: rg0g3xp9rk9nk9o0
-  udp: true
-- name: 🇫🇮 FI 17 - Wcliam
   type: vless
   server: 212.104.128.139
   port: 443
@@ -232,7 +156,7 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 18 - Wcliam
+- name: 🇫🇮 FI 12 - Wcliam
   type: vless
   server: 212.104.128.27
   port: 443
@@ -246,9 +170,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 19 - Wcliam
+- name: 🇫🇮 FI 13 - Wcliam
   type: vless
-  server: 212.104.128.217
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -260,7 +184,35 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 20 - Wcliam
+- name: 🇫🇮 FI 14 - Wcliam
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 15 - Wcliam
+  type: vless
+  server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 16 - Wcliam
   type: vless
   server: 212.104.128.68
   port: 443
@@ -274,9 +226,65 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 21 - Wcliam
+- name: 🇫🇮 FI 17 - Wcliam
+  type: vless
+  server: 212.104.128.244
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 18 - Wcliam
+  type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 19 - Wcliam
+  type: vless
+  server: 212.104.128.0
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 20 - Wcliam
   type: vless
   server: 212.104.128.217
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 21 - Wcliam
+  type: vless
+  server: 212.104.128.0
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -304,7 +312,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 23 - Wcliam
   type: vless
-  server: 212.104.128.206
+  server: 212.104.128.45
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -318,33 +326,19 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 24 - Wcliam
   type: vless
-  server: 212.104.128.0
+  server: 151.101.56.6
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 25 - Wcliam
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 26 - Wcliam
   type: vless
   server: 212.104.128.244
   port: 443
@@ -358,6 +352,60 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 26 - Wcliam
+  type: vless
+  server: 212.104.128.217
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 27 - Wcliam
+  type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 28 - Wcliam
+  type: vless
+  server: 212.104.128.139
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 29 - Wcliam
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -389,6 +437,9 @@ proxy-groups:
   - 🇫🇮 FI 24 - Wcliam
   - 🇫🇮 FI 25 - Wcliam
   - 🇫🇮 FI 26 - Wcliam
+  - 🇫🇮 FI 27 - Wcliam
+  - 🇫🇮 FI 28 - Wcliam
+  - 🇫🇮 FI 29 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -420,5 +471,8 @@ proxy-groups:
   - 🇫🇮 FI 24 - Wcliam
   - 🇫🇮 FI 25 - Wcliam
   - 🇫🇮 FI 26 - Wcliam
+  - 🇫🇮 FI 27 - Wcliam
+  - 🇫🇮 FI 28 - Wcliam
+  - 🇫🇮 FI 29 - Wcliam
 rules:
 - MATCH,PROXIES
