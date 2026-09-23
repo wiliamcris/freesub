@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - Wcliam"
+        "🇹🇷 土耳其 (Turkey) 01 - Wcliam",
+        "🇹🇷 土耳其 (Turkey) 02 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - Wcliam"
+        "🇹🇷 土耳其 (Turkey) 01 - Wcliam",
+        "🇹🇷 土耳其 (Turkey) 02 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
