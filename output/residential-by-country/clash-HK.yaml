@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
-  type: vless
-  server: 46.8.200.91
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Wcliam
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: ''
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: ''
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Wcliam
 rules:
 - MATCH,PROXIES
