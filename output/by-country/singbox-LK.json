@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - Wcliam"
+        "🇱🇰 LK 01 - Wcliam",
+        "🇱🇰 LK 02 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - Wcliam"
+        "🇱🇰 LK 01 - Wcliam",
+        "🇱🇰 LK 02 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
