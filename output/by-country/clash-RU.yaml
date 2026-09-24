@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
   type: vless
-  server: fbsv6.guardora.pro
+  server: 217.19.122.65
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
@@ -34,22 +34,8 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
-  type: vless
-  server: 172.64.229.170
-  port: 2095
+  server: 162.159.0.169
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -59,20 +45,19 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
   type: vless
-  server: 217.19.122.65
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 162.159.48.32
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /?ed=2560security=tls
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +67,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +76,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
 rules:
 - MATCH,PROXIES
