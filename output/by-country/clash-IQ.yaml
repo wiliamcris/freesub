@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - Wcliam
+- name: 🇮🇶 IQ 01 - Wcliam
   type: vless
-  server: 143.246.219.51
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 172.67.156.87
+  port: 443
+  uuid: 4ccf70f9-7632-4b5a-9557-10d2dd347bb2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: To6R63-kKChiGHqm2.vxz0Dduq7to7Su0CDQf.worKERs.DEV
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /vl/zhlUKkHT4SNWHmPFOf4cu6
     headers:
-      Host: 143.246.219.51
+      Host: to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - Wcliam
+  - 🇮🇶 IQ 01 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - Wcliam
+  - 🇮🇶 IQ 01 - Wcliam
 rules:
 - MATCH,PROXIES
