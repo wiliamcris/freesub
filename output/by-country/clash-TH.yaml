@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - Wcliam
+- name: 🇹🇭 TH 01 - Wcliam
   type: vless
-  server: codecanyon.net
-  port: 8880
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /ws
     headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - Wcliam
+  - 🇹🇭 TH 01 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - Wcliam
+  - 🇹🇭 TH 01 - Wcliam
 rules:
 - MATCH,PROXIES
