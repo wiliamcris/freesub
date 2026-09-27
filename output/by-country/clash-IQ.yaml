@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - Wcliam
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/dirxIBhljtrTSM76Q
+    headers:
+      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
+- name: 🇮🇶 IQ 02 - Wcliam
+  type: vless
+  server: 104.21.64.250
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇮🇶 IQ 03 - Wcliam
+  type: vless
+  server: 104.21.51.145
+  port: 8443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - Wcliam
+  - 🇮🇶 IQ 02 - Wcliam
+  - 🇮🇶 IQ 03 - Wcliam
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - Wcliam
+  - 🇮🇶 IQ 02 - Wcliam
+  - 🇮🇶 IQ 03 - Wcliam
+rules:
+- MATCH,PROXIES
