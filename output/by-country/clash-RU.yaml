@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
+  type: ss
+  server: 195.133.23.200
+  port: 40440
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
+  type: ss
+  server: 195.58.48.137
+  port: 40401
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
   type: vless
   server: 217.19.122.200
   port: 443
@@ -18,7 +39,35 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
+  type: vless
+  server: tr3.wba-pn.ru
+  port: 443
+  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tr3.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr3.wba-pn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Wcliam
+  type: vless
+  server: 188.114.97.1
+  port: 2053
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Wcliam
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -39,6 +88,11 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 06 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 07 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +100,10 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 06 - Wcliam
+  - 🇷🇺 俄罗斯 (Russia) 07 - Wcliam
 rules:
 - MATCH,PROXIES
