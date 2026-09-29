@@ -15,12 +15,12 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /
     headers:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 02 - Wcliam
   type: vless
-  server: 103.71.22.26
+  server: 2.26.17.128
   port: 443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
@@ -43,66 +43,10 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 04 - Wcliam
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 05 - Wcliam
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 06 - Wcliam
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 07 - Wcliam
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 08 - Wcliam
   type: vless
   server: 103.71.22.234
   port: 8443
@@ -116,20 +60,6 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 09 - Wcliam
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,11 +69,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - Wcliam
   - 🇸🇪 SE 03 - Wcliam
   - 🇸🇪 SE 04 - Wcliam
-  - 🇸🇪 SE 05 - Wcliam
-  - 🇸🇪 SE 06 - Wcliam
-  - 🇸🇪 SE 07 - Wcliam
-  - 🇸🇪 SE 08 - Wcliam
-  - 🇸🇪 SE 09 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,10 +78,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - Wcliam
   - 🇸🇪 SE 03 - Wcliam
   - 🇸🇪 SE 04 - Wcliam
-  - 🇸🇪 SE 05 - Wcliam
-  - 🇸🇪 SE 06 - Wcliam
-  - 🇸🇪 SE 07 - Wcliam
-  - 🇸🇪 SE 08 - Wcliam
-  - 🇸🇪 SE 09 - Wcliam
 rules:
 - MATCH,PROXIES
