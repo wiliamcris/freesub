@@ -5,23 +5,151 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - Wcliam
+  type: vless
+  server: 172.67.92.203
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 02 - Wcliam
+  type: vless
+  server: 45.141.234.138
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 03 - Wcliam
+  type: vless
+  server: 104.26.11.253
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇮🇪 IE 04 - Wcliam
   type: ss
   server: 20.123.34.66
   port: 443
   cipher: chacha20-ietf-poly1305
   password: r5D6YOSrT6kC76ro
   udp: true
+- name: 🇮🇪 IE 05 - Wcliam
+  type: vless
+  server: 104.26.11.189
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇮🇪 IE 06 - Wcliam
+  type: vless
+  server: 104.26.10.213
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 07 - Wcliam
+  type: vless
+  server: 104.26.10.213
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 08 - Wcliam
+  type: vless
+  server: 104.26.11.189
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇮🇪 IE 09 - Wcliam
+  type: vless
+  server: 104.26.10.213
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - Wcliam
+  - 🇮🇪 IE 02 - Wcliam
+  - 🇮🇪 IE 03 - Wcliam
+  - 🇮🇪 IE 04 - Wcliam
+  - 🇮🇪 IE 05 - Wcliam
+  - 🇮🇪 IE 06 - Wcliam
+  - 🇮🇪 IE 07 - Wcliam
+  - 🇮🇪 IE 08 - Wcliam
+  - 🇮🇪 IE 09 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - Wcliam
+  - 🇮🇪 IE 02 - Wcliam
+  - 🇮🇪 IE 03 - Wcliam
+  - 🇮🇪 IE 04 - Wcliam
+  - 🇮🇪 IE 05 - Wcliam
+  - 🇮🇪 IE 06 - Wcliam
+  - 🇮🇪 IE 07 - Wcliam
+  - 🇮🇪 IE 08 - Wcliam
+  - 🇮🇪 IE 09 - Wcliam
 rules:
 - MATCH,PROXIES
