@@ -5,26 +5,103 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - Wcliam
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 02 - Wcliam
   type: ss
   server: 45.207.207.25
   port: 443
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-- name: 🇸🇨 SC 02 - Wcliam
+- name: 🇸🇨 SC 03 - Wcliam
   type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 172.64.42.85
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: proxy-34l.pages.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 04 - Wcliam
+  type: vless
+  server: 104.18.34.14
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 05 - Wcliam
+  type: vless
+  server: 172.64.229.170
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 06 - Wcliam
+  type: vless
+  server: 162.159.24.131
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 07 - Wcliam
+  type: vless
+  server: 172.64.53.55
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 08 - Wcliam
+  type: vless
+  server: 172.64.53.55
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +109,12 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - Wcliam
   - 🇸🇨 SC 02 - Wcliam
+  - 🇸🇨 SC 03 - Wcliam
+  - 🇸🇨 SC 04 - Wcliam
+  - 🇸🇨 SC 05 - Wcliam
+  - 🇸🇨 SC 06 - Wcliam
+  - 🇸🇨 SC 07 - Wcliam
+  - 🇸🇨 SC 08 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +122,11 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - Wcliam
   - 🇸🇨 SC 02 - Wcliam
+  - 🇸🇨 SC 03 - Wcliam
+  - 🇸🇨 SC 04 - Wcliam
+  - 🇸🇨 SC 05 - Wcliam
+  - 🇸🇨 SC 06 - Wcliam
+  - 🇸🇨 SC 07 - Wcliam
+  - 🇸🇨 SC 08 - Wcliam
 rules:
 - MATCH,PROXIES
