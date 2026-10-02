@@ -5,25 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Wcliam
-  type: vless
-  server: 180.149.230.33
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /cctv13.m3u8
     headers:
-      Host: cfbb.dongkunjian.ccwu.cc
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 02 - Wcliam
   type: ss
-  server: 149.22.87.204
+  server: 84.247.155.196
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
 - name: 🇯🇵 日本 (Japan) 03 - Wcliam
   type: vmess
@@ -39,15 +40,37 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: none
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 (Japan) 04 - Wcliam
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 05 - Wcliam
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 06 - Wcliam
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 05 - Wcliam
+- name: 🇯🇵 日本 (Japan) 07 - Wcliam
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -57,108 +80,61 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - Wcliam
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 07 - Wcliam
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 08 - Wcliam
-  type: vless
-  server: 124.156.208.160
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 09 - Wcliam
   type: vmess
   server: 45.32.57.118
   port: 4433
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - Wcliam
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 - Wcliam
   type: vless
-  server: 104.16.10.2
+  server: 137.220.221.179
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 11 - Wcliam
   type: vless
-  server: 103.27.187.162
-  port: 8443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
+  server: 45.14.106.64
+  port: 443
+  uuid: 8344360f-0349-4784-a19f-33fd92e89389
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
+  servername: api.w2m.ink
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /v2
     headers:
-      Host: cfbb.dongkunjian.ccwu.cc
+      Host: api.w2m.ink
 - name: 🇯🇵 日本 (Japan) 12 - Wcliam
   type: vless
-  server: 104.21.0.87
+  server: 43.130.241.204
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 8344360f-0349-4784-a19f-33fd92e89389
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: api.w2m.ink
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /v2
     headers:
-      Host: jp3.yohototo.top
+      Host: api.w2m.ink
 - name: 🇯🇵 日本 (Japan) 13 - Wcliam
-  type: vless
-  server: 92.113.124.38
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 14 - Wcliam
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -168,6 +144,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 14 - Wcliam
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
 - name: 🇯🇵 日本 (Japan) 15 - Wcliam
   type: vmess
   server: 45.32.57.118
@@ -186,18 +177,8 @@ proxies:
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 17 - Wcliam
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - Wcliam
   type: vless
-  server: 43.130.241.204
+  server: 207.57.131.171
   port: 443
   uuid: 8344360f-0349-4784-a19f-33fd92e89389
   udp: true
@@ -209,7 +190,95 @@ proxies:
     path: /v2
     headers:
       Host: api.w2m.ink
+- name: 🇯🇵 日本 (Japan) 18 - Wcliam
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
 - name: 🇯🇵 日本 (Japan) 19 - Wcliam
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 20 - Wcliam
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 21 - Wcliam
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 22 - Wcliam
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 23 - Wcliam
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - Wcliam
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - Wcliam
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 26 - Wcliam
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 27 - Wcliam
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -224,102 +293,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 20 - Wcliam
-  type: vless
-  server: 207.57.131.171
-  port: 443
-  uuid: 8344360f-0349-4784-a19f-33fd92e89389
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: api.w2m.ink
-  network: ws
-  ws-opts:
-    path: /v2
-    headers:
-      Host: api.w2m.ink
-- name: 🇯🇵 日本 (Japan) 21 - Wcliam
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22 - Wcliam
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - Wcliam
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 24 - Wcliam
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 25 - Wcliam
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - Wcliam
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - Wcliam
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 28 - Wcliam
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29 - Wcliam
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - Wcliam
   type: vless
   server: 137.220.221.179
   port: 443
@@ -360,8 +334,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 26 - Wcliam
   - 🇯🇵 日本 (Japan) 27 - Wcliam
   - 🇯🇵 日本 (Japan) 28 - Wcliam
-  - 🇯🇵 日本 (Japan) 29 - Wcliam
-  - 🇯🇵 日本 (Japan) 30 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -395,7 +367,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 26 - Wcliam
   - 🇯🇵 日本 (Japan) 27 - Wcliam
   - 🇯🇵 日本 (Japan) 28 - Wcliam
-  - 🇯🇵 日本 (Japan) 29 - Wcliam
-  - 🇯🇵 日本 (Japan) 30 - Wcliam
 rules:
 - MATCH,PROXIES
