@@ -6,40 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - Wcliam",
-        "🇸🇨 SC 02 - Wcliam",
-        "🇸🇨 SC 03 - Wcliam",
-        "🇸🇨 SC 04 - Wcliam",
-        "🇸🇨 SC 05 - Wcliam",
-        "🇸🇨 SC 06 - Wcliam",
-        "🇸🇨 SC 07 - Wcliam",
-        "🇸🇨 SC 08 - Wcliam",
-        "🇸🇨 SC 09 - Wcliam",
-        "🇸🇨 SC 10 - Wcliam",
-        "🇸🇨 SC 11 - Wcliam",
-        "🇸🇨 SC 12 - Wcliam",
-        "🇸🇨 SC 13 - Wcliam",
-        "🇸🇨 SC 14 - Wcliam"
+        "🇸🇨 SC 01 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - Wcliam",
-        "🇸🇨 SC 02 - Wcliam",
-        "🇸🇨 SC 03 - Wcliam",
-        "🇸🇨 SC 04 - Wcliam",
-        "🇸🇨 SC 05 - Wcliam",
-        "🇸🇨 SC 06 - Wcliam",
-        "🇸🇨 SC 07 - Wcliam",
-        "🇸🇨 SC 08 - Wcliam",
-        "🇸🇨 SC 09 - Wcliam",
-        "🇸🇨 SC 10 - Wcliam",
-        "🇸🇨 SC 11 - Wcliam",
-        "🇸🇨 SC 12 - Wcliam",
-        "🇸🇨 SC 13 - Wcliam",
-        "🇸🇨 SC 14 - Wcliam"
+        "🇸🇨 SC 01 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
