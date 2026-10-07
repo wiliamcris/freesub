@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Wcliam
   type: vless
-  server: 103.86.49.57
-  port: 80
+  server: 104.16.10.185
+  port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 02 - Wcliam
   type: vless
   server: 103.86.49.57
@@ -32,19 +33,51 @@ proxies:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 03 - Wcliam
   type: vless
-  server: 104.16.10.185
-  port: 443
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 TH 04 - Wcliam
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 05 - Wcliam
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 06 - Wcliam
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 07 - Wcliam
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -63,6 +96,9 @@ proxy-groups:
   - 🇹🇭 TH 02 - Wcliam
   - 🇹🇭 TH 03 - Wcliam
   - 🇹🇭 TH 04 - Wcliam
+  - 🇹🇭 TH 05 - Wcliam
+  - 🇹🇭 TH 06 - Wcliam
+  - 🇹🇭 TH 07 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +108,8 @@ proxy-groups:
   - 🇹🇭 TH 02 - Wcliam
   - 🇹🇭 TH 03 - Wcliam
   - 🇹🇭 TH 04 - Wcliam
+  - 🇹🇭 TH 05 - Wcliam
+  - 🇹🇭 TH 06 - Wcliam
+  - 🇹🇭 TH 07 - Wcliam
 rules:
 - MATCH,PROXIES
