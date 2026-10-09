@@ -15,33 +15,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇭 TH 02 - Wcliam
-  type: ss
-  server: 103.107.52.106
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇭 TH 03 - Wcliam
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 04 - Wcliam
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 05 - Wcliam
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -59,8 +42,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - Wcliam
   - 🇹🇭 TH 02 - Wcliam
   - 🇹🇭 TH 03 - Wcliam
-  - 🇹🇭 TH 04 - Wcliam
-  - 🇹🇭 TH 05 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +50,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - Wcliam
   - 🇹🇭 TH 02 - Wcliam
   - 🇹🇭 TH 03 - Wcliam
-  - 🇹🇭 TH 04 - Wcliam
-  - 🇹🇭 TH 05 - Wcliam
 rules:
 - MATCH,PROXIES
