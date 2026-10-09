@@ -16,7 +16,7 @@ proxies:
 - name: 🇵🇱 PL 02 - Wcliam
   type: vless
   server: 95.85.253.241
-  port: 2087
+  port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -25,7 +25,7 @@ proxies:
 - name: 🇵🇱 PL 03 - Wcliam
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2087
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -34,7 +34,7 @@ proxies:
 - name: 🇵🇱 PL 04 - Wcliam
   type: vless
   server: 95.85.253.241
-  port: 2087
+  port: 2083
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -43,7 +43,7 @@ proxies:
 - name: 🇵🇱 PL 05 - Wcliam
   type: vless
   server: 95.85.253.241
-  port: 2083
+  port: 2053
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
@@ -52,35 +52,12 @@ proxies:
 - name: 🇵🇱 PL 06 - Wcliam
   type: vless
   server: 95.85.253.241
-  port: 2053
+  port: 2087
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   udp: true
   tls: true
   skip-cert-verify: true
   servername: 95.85.253.241
-- name: 🇵🇱 PL 07 - Wcliam
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 08 - Wcliam
-  type: vless
-  server: 2.56.172.107
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: x.m-90.xyz
-  network: ws
-  ws-opts:
-    path: /t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,8 +69,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - Wcliam
   - 🇵🇱 PL 05 - Wcliam
   - 🇵🇱 PL 06 - Wcliam
-  - 🇵🇱 PL 07 - Wcliam
-  - 🇵🇱 PL 08 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,7 +80,5 @@ proxy-groups:
   - 🇵🇱 PL 04 - Wcliam
   - 🇵🇱 PL 05 - Wcliam
   - 🇵🇱 PL 06 - Wcliam
-  - 🇵🇱 PL 07 - Wcliam
-  - 🇵🇱 PL 08 - Wcliam
 rules:
 - MATCH,PROXIES
