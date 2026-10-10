@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Wcliam
+  type: ss
+  server: www.asamping.ir
+  port: 1468
+  cipher: aes-128-gcm
+  password: l2NidZbckMu4PnIHsJTYJg
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - Wcliam
   type: vless
   server: 203.202.232.211
   port: 443
@@ -18,7 +25,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - Wcliam
+- name: 🇹🇷 土耳其 (Turkey) 03 - Wcliam
   type: vless
   server: 130.94.1.150
   port: 443
@@ -32,6 +39,14 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
+- name: 🇹🇷 土耳其 (Turkey) 04 - Wcliam
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Wcliam
   - 🇹🇷 土耳其 (Turkey) 02 - Wcliam
+  - 🇹🇷 土耳其 (Turkey) 03 - Wcliam
+  - 🇹🇷 土耳其 (Turkey) 04 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Wcliam
   - 🇹🇷 土耳其 (Turkey) 02 - Wcliam
+  - 🇹🇷 土耳其 (Turkey) 03 - Wcliam
+  - 🇹🇷 土耳其 (Turkey) 04 - Wcliam
 rules:
 - MATCH,PROXIES
