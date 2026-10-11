@@ -25,13 +25,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - Wcliam
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - Wcliam
   - 🇮🇪 IE 02 - Wcliam
-  - 🇮🇪 IE 03 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - Wcliam
   - 🇮🇪 IE 02 - Wcliam
-  - 🇮🇪 IE 03 - Wcliam
 rules:
 - MATCH,PROXIES
