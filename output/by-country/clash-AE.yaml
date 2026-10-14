@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,7 +19,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -45,6 +45,34 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Wcliam
   type: vless
+  server: 83.147.216.223
+  port: 4433
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - Wcliam
+  type: vless
+  server: 31.57.190.17
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 06 - Wcliam
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -56,20 +84,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - Wcliam
+- name: 🇦🇪 阿联酋 (UAE) 07 - Wcliam
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 5.75.195.83
+  port: 56879
+  uuid: f8847ac2-e586-400f-841b-00081ea4592e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - Wcliam
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - Wcliam
   type: vless
   server: 31.57.190.49
   port: 443
@@ -83,33 +112,6 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 07 - Wcliam
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 08 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - Wcliam
   type: vless
   server: uae.unixzone.us
@@ -123,18 +125,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - Wcliam
-  type: vless
-  server: zordbx861.233874.xyz
-  port: 8888
-  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,7 +139,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 08 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 09 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 10 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,6 +153,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 08 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 09 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 10 - Wcliam
 rules:
 - MATCH,PROXIES
