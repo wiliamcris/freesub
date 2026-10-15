@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Wcliam
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - Wcliam
   type: vless
   server: 2.26.225.89
@@ -30,52 +29,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: 2.26.225.89
 - name: 🇵🇱 PL 04 - Wcliam
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - Wcliam
-  type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 06 - Wcliam
-  type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 07 - Wcliam
-  type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,9 +48,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - Wcliam
   - 🇵🇱 PL 03 - Wcliam
   - 🇵🇱 PL 04 - Wcliam
-  - 🇵🇱 PL 05 - Wcliam
-  - 🇵🇱 PL 06 - Wcliam
-  - 🇵🇱 PL 07 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,8 +57,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - Wcliam
   - 🇵🇱 PL 03 - Wcliam
   - 🇵🇱 PL 04 - Wcliam
-  - 🇵🇱 PL 05 - Wcliam
-  - 🇵🇱 PL 06 - Wcliam
-  - 🇵🇱 PL 07 - Wcliam
 rules:
 - MATCH,PROXIES
