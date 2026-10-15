@@ -6,31 +6,28 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - Wcliam
   type: vless
-  server: 83.222.23.81
-  port: 38065
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇰🇿 KZ 02 - Wcliam
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - Wcliam
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
 - name: 🇰🇿 KZ 03 - Wcliam
   type: vless
   server: 109.248.170.119
@@ -42,7 +39,7 @@ proxies:
   reality-opts:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
