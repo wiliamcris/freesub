@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Wcliam
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - Wcliam
   type: vless
   server: 2.26.225.89
@@ -33,6 +32,23 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - Wcliam
   type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 05 - Wcliam
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 06 - Wcliam
+  type: vless
   server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -49,6 +65,8 @@ proxy-groups:
   - 🇵🇱 PL 02 - Wcliam
   - 🇵🇱 PL 03 - Wcliam
   - 🇵🇱 PL 04 - Wcliam
+  - 🇵🇱 PL 05 - Wcliam
+  - 🇵🇱 PL 06 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +76,7 @@ proxy-groups:
   - 🇵🇱 PL 02 - Wcliam
   - 🇵🇱 PL 03 - Wcliam
   - 🇵🇱 PL 04 - Wcliam
+  - 🇵🇱 PL 05 - Wcliam
+  - 🇵🇱 PL 06 - Wcliam
 rules:
 - MATCH,PROXIES
