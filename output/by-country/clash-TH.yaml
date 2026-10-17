@@ -5,106 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - Wcliam
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 02 - Wcliam
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 03 - Wcliam
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 04 - Wcliam
-  type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 05 - Wcliam
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 06 - Wcliam
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 07 - Wcliam
   type: ss
   server: 103.107.52.106
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 08 - Wcliam
-  type: vless
-  server: 104.18.26.90
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+- name: 🇹🇭 TH 02 - Wcliam
+  type: ss
+  server: 103.107.52.106
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 09 - Wcliam
+- name: 🇹🇭 TH 03 - Wcliam
+  type: ss
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: 🇹🇭 TH 04 - Wcliam
   type: vless
   server: v2ray.simspeedup.com
   port: 80
@@ -116,8 +37,8 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 10 - Wcliam
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 05 - Wcliam
   type: vless
   server: 104.16.10.185
   port: 443
@@ -126,66 +47,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 11 - Wcliam
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 12 - Wcliam
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 13 - Wcliam
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 14 - Wcliam
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 15 - Wcliam
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /ws
@@ -201,16 +62,6 @@ proxy-groups:
   - 🇹🇭 TH 03 - Wcliam
   - 🇹🇭 TH 04 - Wcliam
   - 🇹🇭 TH 05 - Wcliam
-  - 🇹🇭 TH 06 - Wcliam
-  - 🇹🇭 TH 07 - Wcliam
-  - 🇹🇭 TH 08 - Wcliam
-  - 🇹🇭 TH 09 - Wcliam
-  - 🇹🇭 TH 10 - Wcliam
-  - 🇹🇭 TH 11 - Wcliam
-  - 🇹🇭 TH 12 - Wcliam
-  - 🇹🇭 TH 13 - Wcliam
-  - 🇹🇭 TH 14 - Wcliam
-  - 🇹🇭 TH 15 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -221,15 +72,5 @@ proxy-groups:
   - 🇹🇭 TH 03 - Wcliam
   - 🇹🇭 TH 04 - Wcliam
   - 🇹🇭 TH 05 - Wcliam
-  - 🇹🇭 TH 06 - Wcliam
-  - 🇹🇭 TH 07 - Wcliam
-  - 🇹🇭 TH 08 - Wcliam
-  - 🇹🇭 TH 09 - Wcliam
-  - 🇹🇭 TH 10 - Wcliam
-  - 🇹🇭 TH 11 - Wcliam
-  - 🇹🇭 TH 12 - Wcliam
-  - 🇹🇭 TH 13 - Wcliam
-  - 🇹🇭 TH 14 - Wcliam
-  - 🇹🇭 TH 15 - Wcliam
 rules:
 - MATCH,PROXIES
