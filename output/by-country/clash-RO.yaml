@@ -5,71 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - Wcliam
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 02 - Wcliam
   type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 154.46.31.106
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 02 - Wcliam
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 03 - Wcliam
-  type: vless
-  server: ksbemdmd.color-shop.ir
-  port: 443
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇷🇴 RO 04 - Wcliam
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - Wcliam
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 06 - Wcliam
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - Wcliam
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: 🇷🇴 RO 08 - Wcliam
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,12 +26,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - Wcliam
   - 🇷🇴 RO 02 - Wcliam
-  - 🇷🇴 RO 03 - Wcliam
-  - 🇷🇴 RO 04 - Wcliam
-  - 🇷🇴 RO 05 - Wcliam
-  - 🇷🇴 RO 06 - Wcliam
-  - 🇷🇴 RO 07 - Wcliam
-  - 🇷🇴 RO 08 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,11 +33,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - Wcliam
   - 🇷🇴 RO 02 - Wcliam
-  - 🇷🇴 RO 03 - Wcliam
-  - 🇷🇴 RO 04 - Wcliam
-  - 🇷🇴 RO 05 - Wcliam
-  - 🇷🇴 RO 06 - Wcliam
-  - 🇷🇴 RO 07 - Wcliam
-  - 🇷🇴 RO 08 - Wcliam
 rules:
 - MATCH,PROXIES
