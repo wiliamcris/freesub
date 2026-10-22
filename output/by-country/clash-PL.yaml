@@ -20,6 +20,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 03 - Wcliam
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +36,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - Wcliam
   - 🇵🇱 PL 02 - Wcliam
+  - 🇵🇱 PL 03 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +44,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - Wcliam
   - 🇵🇱 PL 02 - Wcliam
+  - 🇵🇱 PL 03 - Wcliam
 rules:
 - MATCH,PROXIES
