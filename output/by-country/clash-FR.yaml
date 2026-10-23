@@ -21,43 +21,6 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 02 - Wcliam
   type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 03 - Wcliam
-  type: vless
-  server: fr2.downbala.com
-  port: 443
-  uuid: 1252717c-393b-4ab7-96f7-7f49cf77e9e3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: t0.m.awsstatic.com
-  network: ws
-  ws-opts:
-    path: /timer/?ed=2560
-    headers:
-      Host: fr2.downbala.com
-- name: 🇫🇷 法国 (France) 04 - Wcliam
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - Wcliam
-  type: vmess
   server: 145.239.55.210
   port: 80
   uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
@@ -71,7 +34,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 06 - Wcliam
+- name: 🇫🇷 法国 (France) 03 - Wcliam
   type: vmess
   server: 57.128.164.21
   port: 80
@@ -86,7 +49,7 @@ proxies:
     path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 07 - Wcliam
+- name: 🇫🇷 法国 (France) 04 - Wcliam
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -97,7 +60,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 08 - Wcliam
+- name: 🇫🇷 法国 (France) 05 - Wcliam
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 06 - Wcliam
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -119,8 +94,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - Wcliam
   - 🇫🇷 法国 (France) 05 - Wcliam
   - 🇫🇷 法国 (France) 06 - Wcliam
-  - 🇫🇷 法国 (France) 07 - Wcliam
-  - 🇫🇷 法国 (France) 08 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,7 +105,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - Wcliam
   - 🇫🇷 法国 (France) 05 - Wcliam
   - 🇫🇷 法国 (France) 06 - Wcliam
-  - 🇫🇷 法国 (France) 07 - Wcliam
-  - 🇫🇷 法国 (France) 08 - Wcliam
 rules:
 - MATCH,PROXIES
