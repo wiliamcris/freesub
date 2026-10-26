@@ -6,12 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - Wcliam
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - Wcliam
   type: vless
   server: 2.26.6.1
@@ -23,14 +24,21 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - Wcliam
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - Wcliam
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 05 - Wcliam
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -38,23 +46,41 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - Wcliam
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇵🇱 PL 06 - Wcliam
   type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 07 - Wcliam
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 08 - Wcliam
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 07 - Wcliam
+- name: 🇵🇱 PL 09 - Wcliam
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 10 - Wcliam
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -74,6 +100,9 @@ proxy-groups:
   - 🇵🇱 PL 05 - Wcliam
   - 🇵🇱 PL 06 - Wcliam
   - 🇵🇱 PL 07 - Wcliam
+  - 🇵🇱 PL 08 - Wcliam
+  - 🇵🇱 PL 09 - Wcliam
+  - 🇵🇱 PL 10 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,5 +115,8 @@ proxy-groups:
   - 🇵🇱 PL 05 - Wcliam
   - 🇵🇱 PL 06 - Wcliam
   - 🇵🇱 PL 07 - Wcliam
+  - 🇵🇱 PL 08 - Wcliam
+  - 🇵🇱 PL 09 - Wcliam
+  - 🇵🇱 PL 10 - Wcliam
 rules:
 - MATCH,PROXIES
