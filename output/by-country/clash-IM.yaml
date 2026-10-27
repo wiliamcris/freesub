@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - Wcliam
+- name: 🇮🇲 IM 01 - Wcliam
   type: vless
-  server: 216.24.57.225
-  port: 2087
-  uuid: 825a76ef-053f-41eb-ba81-411e29494251
+  server: 185.162.229.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: busstop.zandix.ir
   network: ws
   ws-opts:
-    path: /wss
+    path: /
     headers:
-      Host: busstop.zandix.ir
+      Host: vms.lifetime61.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - Wcliam
+  - 🇮🇲 IM 01 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - Wcliam
+  - 🇮🇲 IM 01 - Wcliam
 rules:
 - MATCH,PROXIES
