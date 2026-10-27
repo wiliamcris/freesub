@@ -64,6 +64,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇧🇾 BY 06 - Wcliam
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 07 - Wcliam
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +100,8 @@ proxy-groups:
   - 🇧🇾 BY 03 - Wcliam
   - 🇧🇾 BY 04 - Wcliam
   - 🇧🇾 BY 05 - Wcliam
+  - 🇧🇾 BY 06 - Wcliam
+  - 🇧🇾 BY 07 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +112,7 @@ proxy-groups:
   - 🇧🇾 BY 03 - Wcliam
   - 🇧🇾 BY 04 - Wcliam
   - 🇧🇾 BY 05 - Wcliam
+  - 🇧🇾 BY 06 - Wcliam
+  - 🇧🇾 BY 07 - Wcliam
 rules:
 - MATCH,PROXIES
