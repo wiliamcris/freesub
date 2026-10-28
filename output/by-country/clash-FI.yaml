@@ -34,17 +34,43 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - Wcliam
   type: vless
-  server: 2.27.122.221
+  server: 199.232.239.239
   port: 443
-  uuid: dcec1f6d-0584-48ee-9e67-c2e16f23904a
+  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 04 - Wcliam
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: YuFm9PUkI61urw2Uzk_bulQJdblxqxebBafwKHW-8TE
-  servername: www.nvidia.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 05 - Wcliam
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - Wcliam
+- name: 🇫🇮 FI 06 - Wcliam
   type: vless
   server: 65.109.212.193
   port: 465
@@ -58,7 +84,21 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 05 - Wcliam
+- name: 🇫🇮 FI 07 - Wcliam
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 08 - Wcliam
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -70,7 +110,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 06 - Wcliam
+- name: 🇫🇮 FI 09 - Wcliam
   type: vless
   server: hw3.divarkhaghazi.com
   port: 465
@@ -84,43 +124,6 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 07 - Wcliam
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 08 - Wcliam
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - Wcliam
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 10 - Wcliam
   type: vless
   server: 199.232.239.239
@@ -151,87 +154,6 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 12 - Wcliam
   type: vless
-  server: 2.27.13.152
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st4834a.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st4834a.rumedia-cdn.com
-- name: 🇫🇮 FI 13 - Wcliam
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 14 - Wcliam
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 15 - Wcliam
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 36805edb-1e85-4199-a59f-117010b70017
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 16 - Wcliam
-  type: vless
-  server: 2.27.13.152
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st4834a.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st4834a.rumedia-cdn.com
-- name: 🇫🇮 FI 17 - Wcliam
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 36805edb-1e85-4199-a59f-117010b70017
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 18 - Wcliam
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -260,12 +182,6 @@ proxy-groups:
   - 🇫🇮 FI 10 - Wcliam
   - 🇫🇮 FI 11 - Wcliam
   - 🇫🇮 FI 12 - Wcliam
-  - 🇫🇮 FI 13 - Wcliam
-  - 🇫🇮 FI 14 - Wcliam
-  - 🇫🇮 FI 15 - Wcliam
-  - 🇫🇮 FI 16 - Wcliam
-  - 🇫🇮 FI 17 - Wcliam
-  - 🇫🇮 FI 18 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -283,11 +199,5 @@ proxy-groups:
   - 🇫🇮 FI 10 - Wcliam
   - 🇫🇮 FI 11 - Wcliam
   - 🇫🇮 FI 12 - Wcliam
-  - 🇫🇮 FI 13 - Wcliam
-  - 🇫🇮 FI 14 - Wcliam
-  - 🇫🇮 FI 15 - Wcliam
-  - 🇫🇮 FI 16 - Wcliam
-  - 🇫🇮 FI 17 - Wcliam
-  - 🇫🇮 FI 18 - Wcliam
 rules:
 - MATCH,PROXIES
