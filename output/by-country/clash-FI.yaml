@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - Wcliam
   type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 02 - Wcliam
-  type: vless
   server: 65.109.211.81
   port: 465
   uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
@@ -32,9 +18,23 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 02 - Wcliam
+  type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - Wcliam
   type: vless
-  server: 65.109.210.221
+  server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -48,20 +48,7 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 04 - Wcliam
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 05 - Wcliam
-  type: vless
-  server: hw3.divarkhaghazi.com
+  server: 65.109.210.221
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -73,20 +60,21 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 06 - Wcliam
+- name: 🇫🇮 FI 05 - Wcliam
   type: vless
-  server: mail.loyalsmile.net
-  port: 8080
-  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
+  server: 84.22.150.39
+  port: 7443
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   network: ws
   ws-opts:
-    path: /wp-content3
+    path: /@Marisa_kristi
     headers:
-      Host: mail.loyalsmile.net
-- name: 🇫🇮 FI 07 - Wcliam
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇫🇮 FI 06 - Wcliam
   type: vless
   server: 65.109.210.221
   port: 465
@@ -100,20 +88,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 08 - Wcliam
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 09 - Wcliam
+- name: 🇫🇮 FI 07 - Wcliam
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -138,8 +113,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - Wcliam
   - 🇫🇮 FI 06 - Wcliam
   - 🇫🇮 FI 07 - Wcliam
-  - 🇫🇮 FI 08 - Wcliam
-  - 🇫🇮 FI 09 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,7 +125,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - Wcliam
   - 🇫🇮 FI 06 - Wcliam
   - 🇫🇮 FI 07 - Wcliam
-  - 🇫🇮 FI 08 - Wcliam
-  - 🇫🇮 FI 09 - Wcliam
 rules:
 - MATCH,PROXIES
