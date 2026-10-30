@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Wcliam
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
-  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -30,6 +17,19 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 02 - Wcliam
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - Wcliam
   type: vless
   server: 84.235.244.108
@@ -45,20 +45,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - Wcliam
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - Wcliam
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -71,30 +71,30 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - Wcliam
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 07 - Wcliam
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 08 - Wcliam
   type: vless
   server: 95.174.68.188
@@ -109,12 +109,10 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 09 - Wcliam
-  type: vmess
-  server: octpus1.gsmonline.ir
-  port: 8080
-  uuid: ea183122-9b4a-4dc3-afe2-adb114e2019d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
@@ -122,7 +120,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: snapp.ir
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - Wcliam
   type: vless
   server: uae.unixzone.us
@@ -137,74 +135,20 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 11 - Wcliam
-  type: vmess
-  server: octpus1.gsmonline.ir
-  port: 8080
-  uuid: ea183122-9b4a-4dc3-afe2-adb114e2019d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: snapp.ir
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 12 - Wcliam
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 13 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 14 - Wcliam
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 16 - Wcliam
-  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -216,110 +160,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 17 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 18 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 19 - Wcliam
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 20 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 21 - Wcliam
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 22 - Wcliam
-  type: vless
-  server: 185.253.116.33
-  port: 14430
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 23 - Wcliam
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 24 - Wcliam
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -337,18 +177,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 11 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 12 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 13 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 14 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 15 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 16 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 17 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 18 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 19 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 20 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 21 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 22 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 23 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 24 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -366,17 +194,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 11 - Wcliam
   - 🇦🇪 阿联酋 (UAE) 12 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 13 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 14 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 15 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 16 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 17 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 18 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 19 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 20 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 21 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 22 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 23 - Wcliam
-  - 🇦🇪 阿联酋 (UAE) 24 - Wcliam
 rules:
 - MATCH,PROXIES

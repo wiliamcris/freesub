@@ -5,26 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Wcliam
-  type: ss
-  server: 159.194.251.76
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
   type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  server: 194.55.239.89
+  port: 443
+  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
+  servername: broadcast.liveflow.space
   network: ws
   ws-opts:
-    path: /
+    path: /live.stream.v1.Broadcast/
     headers:
-      Host: 194.87.143.165
+      Host: broadcast.liveflow.space
+- name: 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
+  type: ss
+  server: 130.49.189.54
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
