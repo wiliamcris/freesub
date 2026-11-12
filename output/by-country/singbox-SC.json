@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - Wcliam"
+        "🇸🇨 SC 01 - Wcliam",
+        "🇸🇨 SC 02 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - Wcliam"
+        "🇸🇨 SC 01 - Wcliam",
+        "🇸🇨 SC 02 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
