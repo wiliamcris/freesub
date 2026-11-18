@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - Wcliam
   type: ss
-  server: 40.123.254.236
+  server: 40.123.240.235
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: M8Z2I7nGjhmwhy2m
+  password: WTQlw0DYHp6QQjow
   udp: true
 - name: 🇿🇦 ZA 02 - Wcliam
   type: ss
@@ -27,10 +27,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 04 - Wcliam
   type: ss
-  server: 40.123.240.235
-  port: 443
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: WTQlw0DYHp6QQjow
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 proxy-groups:
 - name: PROXIES

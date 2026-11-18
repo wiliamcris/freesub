@@ -5,175 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 02 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 03 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 04 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 05 - Wcliam
   type: ss
   server: 51.222.136.236
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - Wcliam
-  type: ss
-  server: 15.235.121.109
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 575hiopq2h28yao6
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 03 - Wcliam
-  type: vless
-  server: 8.35.211.114
-  port: 2053
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 04 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp22.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /m/club/seasons
-    headers:
-      Host: vp22.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 05 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 06 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 07 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 08 - Wcliam
-  type: vless
-  server: 172.64.147.34
-  port: 2096
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 09 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp22.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /playlist
-    headers:
-      Host: vp22.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 10 - Wcliam
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 11 - Wcliam
-  type: vless
-  server: 188.164.248.81
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 12 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - Wcliam
-  type: vless
-  server: 104.18.40.171
-  port: 443
-  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wallweb-boi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-boi.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 14 - Wcliam
-  type: vless
-  server: 148.113.196.75
-  port: 8443
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ov-canada1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 15 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 16 - Wcliam
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -183,13 +61,113 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17 - Wcliam
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 07 - Wcliam
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 08 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 09 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 10 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 11 - Wcliam
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 12 - Wcliam
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 13 - Wcliam
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 14 - Wcliam
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 15 - Wcliam
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 16 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 17 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 18 - Wcliam
   type: vmess
   server: 23.162.200.198
@@ -201,16 +179,44 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 19 - Wcliam
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 20 - Wcliam
+  type: ss
+  server: 54.39.96.233
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 2cvhpvdg4x7mvbps
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 21 - Wcliam
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 22 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 23 - Wcliam
+  type: ss
+  server: 15.235.121.109
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 575hiopq2h28yao6
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 24 - Wcliam
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -220,62 +226,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 21 - Wcliam
-  type: vless
-  server: 8.39.125.213
-  port: 443
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 22 - Wcliam
-  type: vless
-  server: 172.64.152.52
-  port: 443
-  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf.zhahui.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf.zhahui.de5.net
-- name: 🇨🇦 加拿大 (Canada) 23 - Wcliam
-  type: vless
-  server: 8.35.211.185
-  port: 443
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 24 - Wcliam
-  type: vless
-  server: 8.35.211.161
-  port: 2053
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /comics/buy/categories
-    headers:
-      Host: d39333476.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 25 - Wcliam
   type: vmess
   server: 134.195.196.211
@@ -287,51 +237,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 26 - Wcliam
-  type: vless
-  server: 104.18.1.1
-  port: 2083
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlsovip.1d.mom
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vlsovip.1d.mom
-- name: 🇨🇦 加拿大 (Canada) 27 - Wcliam
-  type: ss
-  server: 54.39.96.233
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 2cvhpvdg4x7mvbps
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 28 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 2096
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp13.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /index/content
-    headers:
-      Host: vp13.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 29 - Wcliam
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 30 - Wcliam
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -341,6 +246,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 27 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 28 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 29 - Wcliam
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 30 - Wcliam
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 31 - Wcliam
   type: vmess
   server: 134.195.196.211
@@ -352,20 +291,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 32 - Wcliam
-  type: vless
-  server: 104.19.47.188
-  port: 8443
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 33 - Wcliam
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -375,9 +300,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 33 - Wcliam
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 34 - Wcliam
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -386,68 +318,23 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 35 - Wcliam
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 36 - Wcliam
-  type: vless
-  server: 8.35.211.43
-  port: 2053
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 37 - Wcliam
-  type: ss
-  server: 51.79.64.198
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 38 - Wcliam
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 39 - Wcliam
-  type: vless
-  server: 104.19.44.174
-  port: 2083
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 40 - Wcliam
   type: ss
   server: 51.222.155.113
   port: 5601
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 41 - Wcliam
+- name: 🇨🇦 加拿大 (Canada) 36 - Wcliam
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 37 - Wcliam
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -457,466 +344,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 42 - Wcliam
+- name: 🇨🇦 加拿大 (Canada) 38 - Wcliam
   type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  server: 15.235.121.109
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 575hiopq2h28yao6
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 43 - Wcliam
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 44 - Wcliam
-  type: vless
-  server: 162.159.130.234
-  port: 2096
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp9.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /thread/list
-    headers:
-      Host: vp9.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 45 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 46 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 47 - Wcliam
-  type: vless
-  server: 172.67.65.56
-  port: 2053
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 48 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 49 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 50 - Wcliam
-  type: vless
-  server: 104.17.28.83
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 51 - Wcliam
-  type: vless
-  server: 172.64.147.85
-  port: 443
-  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wallweb-4r0.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-4r0.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 52 - Wcliam
-  type: vless
-  server: 172.67.142.169
-  port: 443
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: youxuanku.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 53 - Wcliam
-  type: vless
-  server: 104.16.157.17
-  port: 8443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /stars
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 54 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 55 - Wcliam
-  type: vless
-  server: 172.64.144.240
-  port: 443
-  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pmpmppm.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048fp=randomizedfp=chrome
-    headers:
-      Host: pmpmppm.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 56 - Wcliam
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 57 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 58 - Wcliam
-  type: vless
-  server: 8.35.211.188
-  port: 8443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn-1fj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 59 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp19.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /images/classify/dh
-    headers:
-      Host: vp19.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 60 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 61 - Wcliam
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 62 - Wcliam
-  type: vless
-  server: 104.17.119.115
-  port: 443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /movie/shop
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 63 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 64 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 65 - Wcliam
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 66 - Wcliam
-  type: vless
-  server: 188.164.248.96
-  port: 8443
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 67 - Wcliam
-  type: vless
-  server: 104.17.213.101
-  port: 2083
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /zip/items/ads
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 68 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 2053
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp11.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /videos/forum
-    headers:
-      Host: vp11.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 69 - Wcliam
-  type: vless
-  server: 162.159.135.234
-  port: 2096
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp9.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /thread/list
-    headers:
-      Host: vp9.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 70 - Wcliam
-  type: vless
-  server: 8.35.211.36
-  port: 2087
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 71 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 2096
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp9.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /thread/list
-    headers:
-      Host: vp9.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 72 - Wcliam
-  type: vless
-  server: 188.164.248.72
-  port: 443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /code/cp/classify
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 73 - Wcliam
-  type: vless
-  server: 8.39.125.139
-  port: 2096
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /category
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 74 - Wcliam
-  type: vless
-  server: 8.35.211.87
-  port: 2096
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 75 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 76 - Wcliam
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp12.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /torrent/documents/photos
-    headers:
-      Host: vp12.1145678.xyz
-- name: 🇨🇦 加拿大 (Canada) 77 - Wcliam
-  type: vless
-  server: 104.18.40.171
-  port: 443
-  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wallweb-4r0.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-4r0.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 78 - Wcliam
-  type: vless
-  server: 104.19.50.28
-  port: 443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn-1fj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 79 - Wcliam
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 80 - Wcliam
+- name: 🇨🇦 加拿大 (Canada) 39 - Wcliam
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -970,47 +405,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 37 - Wcliam
   - 🇨🇦 加拿大 (Canada) 38 - Wcliam
   - 🇨🇦 加拿大 (Canada) 39 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 40 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 41 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 42 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 43 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 44 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 45 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 46 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 47 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 48 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 49 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 50 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 51 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 52 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 53 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 54 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 55 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 56 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 57 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 58 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 59 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 60 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 61 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 62 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 63 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 64 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 65 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 66 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 67 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 68 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 69 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 70 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 71 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 72 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 73 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 74 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 75 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 76 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 77 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 78 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 79 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 80 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1055,46 +449,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 37 - Wcliam
   - 🇨🇦 加拿大 (Canada) 38 - Wcliam
   - 🇨🇦 加拿大 (Canada) 39 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 40 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 41 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 42 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 43 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 44 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 45 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 46 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 47 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 48 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 49 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 50 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 51 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 52 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 53 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 54 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 55 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 56 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 57 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 58 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 59 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 60 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 61 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 62 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 63 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 64 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 65 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 66 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 67 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 68 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 69 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 70 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 71 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 72 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 73 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 74 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 75 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 76 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 77 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 78 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 79 - Wcliam
-  - 🇨🇦 加拿大 (Canada) 80 - Wcliam
 rules:
 - MATCH,PROXIES
