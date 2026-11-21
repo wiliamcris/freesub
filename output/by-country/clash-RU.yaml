@@ -22,29 +22,6 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
   type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
-  type: vless
-  server: 185.178.208.167
-  port: 443
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: unlik.club
-  network: ws
-  ws-opts:
-    path: /static/telemetry/3c9aaef00005/
-    headers:
-      Host: tochkacdn.top
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
-  type: vless
   server: 147.45.175.81
   port: 443
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
@@ -57,21 +34,7 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Wcliam
-  type: vless
-  server: 185.178.208.167
-  port: 443
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: unlik.club
-  network: ws
-  ws-opts:
-    path: /static/telemetry/3c9aaef00005/
-    headers:
-      Host: tochkacdn.top
-- name: 🇷🇺 俄罗斯 (Russia) 07 - Wcliam
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
   type: vless
   server: 136.148.83.69
   port: 443
@@ -89,9 +52,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 06 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 07 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,8 +61,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 03 - Wcliam
   - 🇷🇺 俄罗斯 (Russia) 04 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 05 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 06 - Wcliam
-  - 🇷🇺 俄罗斯 (Russia) 07 - Wcliam
 rules:
 - MATCH,PROXIES
