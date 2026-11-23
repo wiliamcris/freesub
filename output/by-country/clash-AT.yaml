@@ -21,15 +21,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: 154.47.19.225
 - name: 🇦🇹 AT 03 - Wcliam
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 04 - Wcliam
   type: vmess
   server: 154.47.19.225
   port: 1270
@@ -39,13 +32,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 154.47.19.225
-- name: 🇦🇹 AT 05 - Wcliam
+  servername: xmfhlpy.com
+- name: 🇦🇹 AT 04 - Wcliam
   type: ss
   server: 152.53.1.57
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+  udp: true
+- name: 🇦🇹 AT 05 - Wcliam
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 06 - Wcliam
   type: vmess
@@ -57,7 +57,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 07 - Wcliam
   type: vmess
   server: 154.47.19.225
@@ -68,7 +68,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 154.47.19.225
 proxy-groups:
 - name: PROXIES
   type: select
