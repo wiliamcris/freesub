@@ -15,22 +15,21 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - Wcliam
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  port: 443
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
   network: ws
   ws-opts:
-    path: /
+    path: /c54a815e676d9acc
     headers:
-      Host: in-152.67.8.205-0242
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
 - name: 🇮🇳 印度 (India) 03 - Wcliam
   type: vless
   server: 178.212.35.198
@@ -58,19 +57,6 @@ proxies:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 05 - Wcliam
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 06 - Wcliam
-  type: vless
   server: in.smrtai.top
   port: 443
   uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
@@ -80,59 +66,7 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 07 - Wcliam
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 08 - Wcliam
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 09 - Wcliam
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 10 - Wcliam
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -143,11 +77,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - Wcliam
   - 🇮🇳 印度 (India) 04 - Wcliam
   - 🇮🇳 印度 (India) 05 - Wcliam
-  - 🇮🇳 印度 (India) 06 - Wcliam
-  - 🇮🇳 印度 (India) 07 - Wcliam
-  - 🇮🇳 印度 (India) 08 - Wcliam
-  - 🇮🇳 印度 (India) 09 - Wcliam
-  - 🇮🇳 印度 (India) 10 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,10 +87,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - Wcliam
   - 🇮🇳 印度 (India) 04 - Wcliam
   - 🇮🇳 印度 (India) 05 - Wcliam
-  - 🇮🇳 印度 (India) 06 - Wcliam
-  - 🇮🇳 印度 (India) 07 - Wcliam
-  - 🇮🇳 印度 (India) 08 - Wcliam
-  - 🇮🇳 印度 (India) 09 - Wcliam
-  - 🇮🇳 印度 (India) 10 - Wcliam
 rules:
 - MATCH,PROXIES
