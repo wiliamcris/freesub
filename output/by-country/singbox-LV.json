@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - Wcliam"
+        "🇱🇻 LV 01 - Wcliam"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - Wcliam"
+        "🇱🇻 LV 01 - Wcliam"
       ],
       "url": "https://www.google.com/generate_204"
     },
