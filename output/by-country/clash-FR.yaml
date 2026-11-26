@@ -5,22 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - Wcliam
-  type: vless
-  server: 188.114.99.137
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
 - name: 🇫🇷 法国 (France) 02 - Wcliam
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 03 - Wcliam
   type: vmess
-  server: 172.99.189.239
+  server: 91.134.35.72
   port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 04 - Wcliam
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
@@ -28,32 +40,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 03 - Wcliam
-  type: vmess
-  server: 46.105.222.153
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.153
-- name: 🇫🇷 法国 (France) 04 - Wcliam
-  type: vless
-  server: 213.183.45.23
-  port: 8454
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: store.plumstatic.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 213.183.45.23
 - name: 🇫🇷 法国 (France) 05 - Wcliam
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - Wcliam
   type: vmess
   server: 23.162.152.127
   port: 1270
@@ -64,26 +58,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 06 - Wcliam
+- name: 🇫🇷 法国 (France) 07 - Wcliam
   type: ss
-  server: 167.17.64.22
+  server: 172.99.189.142
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 07 - Wcliam
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
 - name: 🇫🇷 法国 (France) 08 - Wcliam
   type: vmess
   server: 141.95.65.9
@@ -96,12 +77,16 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇫🇷 法国 (France) 09 - Wcliam
-  type: ss
-  server: 172.99.189.142
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 10 - Wcliam
   type: vmess
   server: 162.19.204.71
@@ -121,45 +106,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 12 - Wcliam
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 13 - Wcliam
-  type: vless
-  server: 178.104.77.229
-  port: 8443
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: senflarelink-node-m3bfbn.pages.dev
-  network: ws
-  ws-opts:
-    path: /flow=
-    headers:
-      Host: senflarelink-node-m3bfbn.pages.dev
-- name: 🇫🇷 法国 (France) 14 - Wcliam
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 15 - Wcliam
-  type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 16 - Wcliam
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -170,27 +116,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 17 - Wcliam
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 18 - Wcliam
+- name: 🇫🇷 法国 (France) 13 - Wcliam
   type: ss
   server: 38.109.228.110
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 19 - Wcliam
+- name: 🇫🇷 法国 (France) 14 - Wcliam
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -203,7 +136,7 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 20 - Wcliam
+- name: 🇫🇷 法国 (France) 15 - Wcliam
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -214,21 +147,10 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 21 - Wcliam
+- name: 🇫🇷 法国 (France) 16 - Wcliam
   type: vmess
-  server: 91.134.35.72
+  server: 172.99.189.239
   port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 22 - Wcliam
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
@@ -236,17 +158,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 23 - Wcliam
-  type: vmess
-  server: 46.105.222.156
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.156
 proxy-groups:
 - name: PROXIES
   type: select
@@ -268,13 +179,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 14 - Wcliam
   - 🇫🇷 法国 (France) 15 - Wcliam
   - 🇫🇷 法国 (France) 16 - Wcliam
-  - 🇫🇷 法国 (France) 17 - Wcliam
-  - 🇫🇷 法国 (France) 18 - Wcliam
-  - 🇫🇷 法国 (France) 19 - Wcliam
-  - 🇫🇷 法国 (France) 20 - Wcliam
-  - 🇫🇷 法国 (France) 21 - Wcliam
-  - 🇫🇷 法国 (France) 22 - Wcliam
-  - 🇫🇷 法国 (France) 23 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -296,12 +200,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 14 - Wcliam
   - 🇫🇷 法国 (France) 15 - Wcliam
   - 🇫🇷 法国 (France) 16 - Wcliam
-  - 🇫🇷 法国 (France) 17 - Wcliam
-  - 🇫🇷 法国 (France) 18 - Wcliam
-  - 🇫🇷 法国 (France) 19 - Wcliam
-  - 🇫🇷 法国 (France) 20 - Wcliam
-  - 🇫🇷 法国 (France) 21 - Wcliam
-  - 🇫🇷 法国 (France) 22 - Wcliam
-  - 🇫🇷 法国 (France) 23 - Wcliam
 rules:
 - MATCH,PROXIES
