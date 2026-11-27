@@ -29,7 +29,7 @@ proxies:
   servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
       Host: 38.107.234.57
 - name: 🇰🇿 KZ 03 - Wcliam
@@ -46,6 +46,50 @@ proxies:
     path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
       Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 KZ 04 - Wcliam
+  type: vless
+  server: 38.107.234.57
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 05 - Wcliam
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 06 - Wcliam
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +98,9 @@ proxy-groups:
   - 🇰🇿 KZ 01 - Wcliam
   - 🇰🇿 KZ 02 - Wcliam
   - 🇰🇿 KZ 03 - Wcliam
+  - 🇰🇿 KZ 04 - Wcliam
+  - 🇰🇿 KZ 05 - Wcliam
+  - 🇰🇿 KZ 06 - Wcliam
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +109,8 @@ proxy-groups:
   - 🇰🇿 KZ 01 - Wcliam
   - 🇰🇿 KZ 02 - Wcliam
   - 🇰🇿 KZ 03 - Wcliam
+  - 🇰🇿 KZ 04 - Wcliam
+  - 🇰🇿 KZ 05 - Wcliam
+  - 🇰🇿 KZ 06 - Wcliam
 rules:
 - MATCH,PROXIES
